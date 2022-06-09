@@ -1,14 +1,20 @@
 import * as S from "./styles.ts";
 
-export default function Home() {
+import logo from '../../asssets/logo.svg'
+import { About } from "../../components/About/index.tsx";
+
+export function Home() {
   return (
-    <S.NavBar>
-      <S.Logo>Jotta</S.Logo>
-      <S.List>
-        <S.ListItem>about me</S.ListItem>
-        <S.ListItem>projects</S.ListItem>
-        <S.ListItem>get in touch</S.ListItem>
-      </S.List>
-    </S.NavBar>
+    <>
+      <S.NavBar>
+        <S.Logo src={logo} alt="logo"/>
+        <S.List>
+          <S.ListItem>about me</S.ListItem>
+          <S.ListItem>projects</S.ListItem>
+          <S.ListItem>get in touch</S.ListItem>
+        </S.List>
+      </S.NavBar>
+      <About />
+    </>
   )
 }
