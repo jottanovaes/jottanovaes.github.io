@@ -8,7 +8,11 @@ export const NavBar = styled.nav`
   margin: auto;
   padding: 1rem 2rem;
   align-items: center;
-  border: 1px solid black;
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 `
 
 export const Logo = styled.img`
@@ -29,6 +33,7 @@ export const ListItem = styled.li`
   position: relative;
   font-weight: 400;
   padding: 4px 0;
+  cursor: pointer;
 
   ::after{
     content: '';

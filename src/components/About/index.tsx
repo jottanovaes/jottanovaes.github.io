@@ -1,24 +1,35 @@
-import polygon4 from '../../asssets/polygon4.png'
-import profile from '../../asssets/profile.png'
+import React from 'react';
+import profile from '../../asssets/funny.jpg';
+// @ts-ignore
+import * as S from './styles.ts';
 
-import * as S from './styles.ts'
-
-export function About() {
+export default function About() {
   return (
     <S.AboutSection>
 
       <S.BlueBG>
         <S.AboutAside>
           <S.Title>Jotta Novaes</S.Title>
-          <S.SubTitle>Front-End Developer Jr.</S.SubTitle>
+          <S.SubTitle>FullStack Developer</S.SubTitle>
         </S.AboutAside>
       </S.BlueBG>
       
       <S.RedBG>
         <S.ProfileAside>
-          <S.Polygon src={profile} alt="polygon"/>
+          <S.StrippedBox>
+            <S.Polygon src={profile} alt="Author"/>
+          </S.StrippedBox>
         </S.ProfileAside>
       </S.RedBG>
+
+      <S.FullBG>
+        <S.AboutTitle>
+        who·am·i·?
+        </S.AboutTitle>
+        <S.AboutText>
+          A long-life learner with a contemplative nature a big heart and a even bigger patience
+        </S.AboutText>
+      </S.FullBG>
 
     </S.AboutSection>
   )
