@@ -1,7 +1,10 @@
+import React from "react";
+// @ts-ignore
 import * as S from "./styles.ts";
 
 import logo from '../../asssets/logo.svg'
-import { About } from "../../components/About/index.tsx";
+// @ts-ignore
+import About from "../../components/About/index.tsx";
 
 export function Home() {
   return (
