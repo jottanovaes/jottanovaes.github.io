@@ -14,7 +14,7 @@ I created this repo to share my professional and personal interests. The main fo
 * **Worldview:** A free space to share photos, ideas, inspirations, and things I find interesting in my daily life.
 
 ## 🚀 Next Steps (Roadmap)
-- [ ] Deploy the first static version of the site (Base portfolio).
+- [x] Deploy the first static version of the site (Base portfolio).
 - [ ] Create the feed/blog section for short posts and photos.
 - [ ] Configure and migrate to the custom domain `jotta.dev`.
 
